@@ -1,6 +1,6 @@
 #include <iostream> 
 #include <cassert> 
-
+// **I modified this question so that I could get some good practice in with pointers, hence, why the code is slightly broken.
 //given two arrays num1 & num2 which are already sorted in non-decreasing order, the final 
 //array has length of m+n, and num1 and num2 are sorted into the final array based on non-
 //decreasing order. After the sorting, since the function is void, the results are copied into 
@@ -37,6 +37,7 @@ void merge_sorted_array(int nums1[], int nums2[], int m, int n) {
     p_merged_array = nullptr;
 }
 
+//tester function
 int main();
 int main() {
     int m{3};
