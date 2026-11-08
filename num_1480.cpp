@@ -1,7 +1,9 @@
 #include <iostream>
 #include <cassert> 
+//modified q1480 solution, they use a dynamically sized array, since I have not use it in ECE150, I decided to use an array of const size length
+//and return the address of a pointer to the new array. I figured it would be good practice with pointers and dynamically allocated memory
 
-int* runningSum(int nums[], int length){
+int* runningSum(int nums[], int const length){
     assert (length >= 1 && length <= 1000);
     int *p_arr{new int[length]};
     int sum_track{nums[0]};
@@ -17,7 +19,7 @@ int* runningSum(int nums[], int length){
 int main();
 
 int main() {
-    int length{10};
+    int const length{10};
     int nums[length]{1,2,3,4,5,6,7,8,9,10};
     int *result{runningSum(nums, length)}; //*result initialized with same address as p_arr from earlier function
     runningSum(nums, length);
