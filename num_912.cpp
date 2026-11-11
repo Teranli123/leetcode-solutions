@@ -49,7 +49,8 @@ void sort_array(int array[], std::size_t capacity) {
     }
 }
 
-
+//main just to test out my function sort_array
+/*
 int main() {
     std::size_t capacity{10};
     int array[capacity]{10,3,4,7,6,12,4,3,2,1};
@@ -62,3 +63,4 @@ int main() {
     }
     return 0;
 }
+*/
