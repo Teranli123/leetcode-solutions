@@ -8,8 +8,6 @@
 #include <iostream> 
 #include <cassert> 
 
-
-
 //helper function to check if array is sorted or not, will be at the very end of the main function
 std::size_t is_sorted(int const array[], std::size_t const capacity) {
     for (std::size_t i{0}; i < (capacity - 1); i++) {
@@ -19,7 +17,6 @@ std::size_t is_sorted(int const array[], std::size_t const capacity) {
     }
     return capacity;
 }
-
 
 //helper function to find the maximum value in an array
 std::size_t find_max(int array[], std::size_t capacity) {
